@@ -6,16 +6,8 @@ X
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
-X
-(buildSrc/src/main/kotlin/Repositories.kt,1/d/1dd1fd1d4de6e45c49724833df9895c430909b95
-`
-0buildSrc/src/main/kotlin/AndroidLibraryConfig.kt,e/5/e571d9c3a70a09e168f79eb0339015542b3b6664
-[
-+buildSrc/src/main/kotlin/ProjectVersions.kt,1/5/155f987dc1a197cb75d7f130d8b46bb7d15acbab
 I
 buildSrc/build.gradle.kts,d/9/d90b697280fada81e52ec92d24725920f1cb087b
-d
-4buildSrc/src/main/kotlin/DependenciesRepositories.kt,0/0/00e650adfb53a1fcbed8bc55aad7d97b50368025
 @
 build.gradle.kts,d/b/dbcff70658daf80b53ce624f6adcaa529df5ed8d
 C
@@ -24,3 +16,5 @@ X
 (buildSrc/src/main/kotlin/Dependencies.kt,9/2/92eeab422bcb3e6e30d024383a103af19de3267b
 D
 app/build.gradle.kts,d/2/d2a4383452aad84a18429a5844d31330a012a9e6
+S
+#.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0

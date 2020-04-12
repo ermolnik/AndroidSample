@@ -1,11 +1,11 @@
 object ApplicationConfig {
-    const val id = "ru.mts.idatchik"
-    const val buildToolsVersion = "29.0.2"
+    const val id = "ru.ermolnik.androidsample"
+    const val buildToolsVersion = "29.0.3"
     const val compileSdk = 29
     const val minSdk = 21
     const val targetSdk = 29
     const val versionCode = 9
-    const val versionName = "0.0.9"
+    const val versionName = "0.0.1"
 }
 
 object BuildPlugins {

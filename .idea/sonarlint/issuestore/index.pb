@@ -18,3 +18,11 @@ D
 app/build.gradle.kts,d/2/d2a4383452aad84a18429a5844d31330a012a9e6
 S
 #.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
+9
+	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+S
+#buildSrc/src/main/kotlin/Plugins.kt,3/4/349c4192a57425857dda73beafedc1e06dd43c06
+E
+base/build.gradle.kts,8/8/8863fb1d7b3fc7c4fdc06d7fbf2bc4cb73850209
+V
+&buildSrc/src/main/kotlin/SourceSets.kt,b/0/b086fb1c47883a7da4477cb361be1600a35e8fd4

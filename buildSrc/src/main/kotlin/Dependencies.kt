@@ -33,6 +33,7 @@ object Versions {
     const val design = "1.2.0-alpha03"
     const val cardview = "1.0.0"
     const val recyclerview = "1.2.0-alpha01"
+    const val androidAnnotation = "1.1.0"
     const val paging = "2.1.1"
     const val room = "2.2.3"
     const val kotlin = "1.3.70"
@@ -40,7 +41,7 @@ object Versions {
     const val retrofit = "2.7.0"
     const val loggingInterceptor = "4.2.2"
     const val glide = "4.10.0"
-    const val lifecycle = "2.1.0"
+    const val lifecycle = "2.2.0-rc02"
     const val junit = "4.12"
     const val mockito = "2.28.2"
     const val dagger = "2.23.1"
@@ -55,6 +56,8 @@ object Versions {
 
     const val okHttp = "4.2.1"
     const val stetho = "1.5.0"
+
+    const val coroutines = "1.3.2"
 }
 
 object CommonLibraries {
@@ -67,6 +70,7 @@ object CommonLibraries {
 object Glide {
     const val glide = "com.github.bumptech.glide:glide:4.10.0"
     const val glideCompiler = "com.github.bumptech.glide:compiler:4.10.0"
+    const val glideOkhttp = "com.github.bumptech.glide:okhttp3-integration:${Versions.glide}"
 }
 
 object AndroidXLibraries {
@@ -84,6 +88,14 @@ object AndroidXLibraries {
     const val vectorDrawable = "androidx.vectordrawable:vectordrawable:1.0.1"
     const val vectorDrawableAnimated = "androidx.vectordrawable:vectordrawable-animated:1.0.0"
     const val supportVectorDrawableAnimated = "com.android.support:animated-vector-drawable:1.0.0"
+    const val androidAnnotation = "androidx.annotation:annotation:${Versions.androidAnnotation}"
+}
+
+object LifeCycle {
+    const val lifecycleExtensions = "androidx.lifecycle:lifecycle-extensions:${Versions.lifecycle}"
+    const val lifecycleCompiler = "androidx.lifecycle:lifecycle-compiler:${Versions.lifecycle}"
+    const val lifecycleRuntime = "androidx.lifecycle:lifecycle-runtime:${Versions.lifecycle}"
+    const val lifecycleViewModelKtx = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
 }
 
 object Timber {
@@ -162,4 +174,11 @@ object Yandex {
 
 object Cicerone {
     const val cicerone = "ru.terrakok.cicerone:cicerone:3.0.0"
+}
+
+object Coroutines {
+    const val coroutinesCore =
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}"
+    const val coroutinesAndroid =
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutines}"
 }

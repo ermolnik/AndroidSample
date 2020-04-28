@@ -5,7 +5,7 @@ plugins {
     kotlin(Plugins.kotlinKapt)
 }
 
-//val javaVersion: JavaVersion by extra { JavaVersion.VERSION_1_8 }
+val javaVersion: JavaVersion by extra { JavaVersion.VERSION_1_8 }
 
 android {
     compileSdkVersion(ApplicationConfig.compileSdk)
@@ -15,11 +15,11 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
-//    sourceSets {
-//        Main.create(this)
-//        TTest.create(this)
-//        AndroidTest.create(this)
-//    }
+    sourceSets {
+        Main.create(this)
+        TTest.create(this)
+        AndroidTest.create(this)
+    }
 
     testOptions {
         unitTests.isReturnDefaultValues = true
@@ -31,10 +31,10 @@ android {
         isEnabled = true
     }
 
-//    compileOptions {
-//        sourceCompatibility = javaVersion
-//        targetCompatibility = javaVersion
-//    }
+    compileOptions {
+        sourceCompatibility = javaVersion
+        targetCompatibility = javaVersion
+    }
 
 //    lintOptions.setDefaults(file("lint.xml"))
 }
@@ -45,23 +45,24 @@ dependencies {
     implementation(Kotlin.kotlin)
     implementation(Kotlin.kotlinReflect)
     implementation(Kotlin.kotlinKtx)
-//    implementation(Dependencies.material)
 
-//    implementation(Dependencies.coroutines_core)
-//    api(Dependencies.coroutines_android)
-//
-//    implementation(Dependencies.lifecycle_extensions)
-//
-//    implementation(Dependencies.timberkt)
-//
-//    implementation(Dependencies.glide)
-//    implementation(Dependencies.glide_okhttp)
-//    kapt(Dependencies.glide_compiler)
-//    kapt(Dependencies.android_annotation)
-//
-//    api(Dependencies.dagger_android_support)
+    implementation(AndroidXLibraries.design)
+    kapt(AndroidXLibraries.androidAnnotation)
 
-    testImplementation("junit:junit:4.13")
-    androidTestImplementation("androidx.test.ext:junit:1.1.1")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.2.0")
+    implementation(Coroutines.coroutinesAndroid)
+    implementation(Coroutines.coroutinesCore)
+
+    implementation(LifeCycle.lifecycleExtensions)
+
+    implementation(Timber.timber)
+
+    implementation(Glide.glide)
+    implementation(Glide.glideOkhttp)
+    kapt(Glide.glideCompiler)
+
+    implementation(Dagger.daggerAndroidSupport)
+    
+    testImplementation(TestLibraries.junit)
+    androidTestImplementation(TestLibraries.jUnitExt)
+    androidTestImplementation(TestLibraries.espresso)
 }

@@ -26,3 +26,15 @@ E
 base/build.gradle.kts,8/8/8863fb1d7b3fc7c4fdc06d7fbf2bc4cb73850209
 V
 &buildSrc/src/main/kotlin/SourceSets.kt,b/0/b086fb1c47883a7da4477cb361be1600a35e8fd4
+u
+Ebase/src/androidTest/java/ru/ermolnik/base/ExampleInstrumentedTest.kt,6/d/6de260bc8116fedb07ec267eb3b780936ec20fa4
+Q
+!base/src/main/AndroidManifest.xml,3/3/338d63d7b567744d4da7bd19e2b70f1f19b4d69e
+f
+6base/src/test/java/ru/ermolnik/base/ExampleUnitTest.kt,7/9/79c4bcadbc865ec18e71edef4e6d85fa3e0e4123
+?
+base/.gitignore,2/2/222afad067dd5c64cc3f08649168e42762b815b1
+G
+base/consumer-rules.pro,0/6/060ce99fd9d986578606c03190683f72d6783053
+G
+base/proguard-rules.pro,f/8/f859d0776891d2793bf21c2e13e91622e860e4b1

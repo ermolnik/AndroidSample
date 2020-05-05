@@ -1,4 +1,4 @@
-package ru.ermolnik.base
+package ru.ermolnik.base.presentation
 
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector

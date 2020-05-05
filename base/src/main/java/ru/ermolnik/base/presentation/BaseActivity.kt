@@ -1,4 +1,4 @@
-package ru.ermolnik.base
+package ru.ermolnik.base.presentation
 
 import android.content.Context
 import android.os.Bundle
@@ -8,7 +8,8 @@ import androidx.lifecycle.ViewModelProvider
 import dagger.android.support.DaggerAppCompatActivity
 import javax.inject.Inject
 
-abstract class BaseActivity<VM : ViewModel> : DaggerAppCompatActivity(), BaseView {
+abstract class BaseActivity<VM : ViewModel> : DaggerAppCompatActivity(),
+    BaseView {
 
     @Inject
     lateinit var context: Context

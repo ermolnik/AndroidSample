@@ -1,4 +1,4 @@
-package ru.ermolnik.base
+package ru.ermolnik.base.presentation
 
 import android.content.Context
 import android.graphics.Bitmap.CompressFormat
@@ -22,9 +22,9 @@ import java.io.InputStream
 import java.util.concurrent.TimeUnit.SECONDS
 import okhttp3.OkHttpClient
 
-@GlideModule(glideName = "MazeGlide")
+@GlideModule(glideName = "BaseGlide")
 @Excludes(value = [OkHttpLibraryGlideModule::class])
-class MazeGlideModule : AppGlideModule() {
+class BaseGlideModule : AppGlideModule() {
 
     override fun registerComponents(context: Context, glide: Glide, registry: Registry) {
         val client = OkHttpClient.Builder()
@@ -38,7 +38,8 @@ class MazeGlideModule : AppGlideModule() {
     }
 
     override fun applyOptions(context: Context, builder: GlideBuilder) {
-        val memoryCacheSizeBytes = DEFAULT_MEMORY_CACHE_SIZE
+        val memoryCacheSizeBytes =
+            DEFAULT_MEMORY_CACHE_SIZE
         builder.apply {
             setMemoryCache(LruResourceCache(memoryCacheSizeBytes.toLong()))
             setDiskCache(InternalCacheDiskCacheFactory(context, memoryCacheSizeBytes.toLong()))

@@ -2,7 +2,6 @@ package ru.ermolnik.base.util.delegate
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.mobilemovement.kotlintvmaze.base.util.delegate.DelegateAdapterManager
 import javax.inject.Inject
 
 class ItemAdapter @Inject constructor(private val delegateAdapterManager: DelegateAdapterManager) :

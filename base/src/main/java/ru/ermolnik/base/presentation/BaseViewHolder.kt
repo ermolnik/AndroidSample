@@ -1,4 +1,4 @@
-package ru.ermolnik.base
+package ru.ermolnik.base.presentation
 
 import android.view.View
 import androidx.databinding.ViewDataBinding

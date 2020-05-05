@@ -1,9 +1,9 @@
-package ru.ermolnik.base
+package ru.ermolnik.base.presentation
 
-import ru.ermolnik.base.Status.EMPTY
-import ru.ermolnik.base.Status.ERROR
-import ru.ermolnik.base.Status.LOADING
-import ru.ermolnik.base.Status.SUCCESS
+import ru.ermolnik.base.presentation.Status.EMPTY
+import ru.ermolnik.base.presentation.Status.ERROR
+import ru.ermolnik.base.presentation.Status.LOADING
+import ru.ermolnik.base.presentation.Status.SUCCESS
 
 data class Resource<out T>(val status: Status, val data: T?, val message: String?) {
     companion object {

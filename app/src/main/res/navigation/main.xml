@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@+id/main_screen"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/main_screen"
+        android:name="ru.ermolnik.main.MainFragment"
+        android:label="@string/maim_text"
+        tools:layout="@layout/fragment_main"/>
+</navigation>

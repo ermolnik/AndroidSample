@@ -184,3 +184,11 @@ R
 "core/navigation/proguard-rules.pro,b/d/bdfa3c52a2dc3b6ff064bdccfb2d2af8ef6c32ce
 L
 core/navigation/build.gradle,7/c/7c8fa3af0542f1a5fbe304cd1a496c6577de62f5
+S
+#app/src/main/res/values/strings.xml,d/2/d2281fbb3027de2722081a53408dd77628bf080e
+l
+<features/main/src/main/java/ru/ermolnik/main/MainFragment.kt,4/5/451696d6fc5fa0ad105aa9a1dc5d8bfcf1a8779a
+X
+(core/base/src/main/res/values/colors.xml,7/c/7c8c6fda8efc508a28bf85148f57234716bfdf39
+s
+Capp/src/main/java/ru/ermolnik/androidsample/NavigationExtensions.kt,4/e/4edf0bfdbc4afd07716c6ca21a576b36da19bf07

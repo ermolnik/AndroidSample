@@ -25,6 +25,9 @@ android {
       proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
     }
   }
+  kotlinOptions {
+    jvmTarget = "1.8"
+  }
 }
 
 dependencies {
@@ -39,4 +42,7 @@ dependencies {
   implementation("android.arch.navigation:navigation-fragment-ktx:1.0.0")
   implementation("android.arch.navigation:navigation-ui-ktx:1.0.0")
   implementation("androidx.fragment:fragment:1.2.4")
+  implementation(project(":core:base"))
+  implementation(project(":features:main"))
+  implementation(project(":features:settings"))
 }

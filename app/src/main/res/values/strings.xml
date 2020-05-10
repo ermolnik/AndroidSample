@@ -1,3 +1,10 @@
 <resources>
   <string name="app_name">AndroidSample</string>
+
+  <!--bottom navigation-->
+  <string name="main_tab">Main</string>
+  <string name="settings_tab">Settings</string>
+  <string name="cd_main">@string/main_tab</string>
+  <string name="cd_settings">@string/settings_tab</string>
+
 </resources>

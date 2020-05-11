@@ -1,4 +1,4 @@
-package ru.ermolnik.base.presentation
+package ru.ermolnik.base.presentation.view
 
 import android.app.Activity
 import android.app.Application

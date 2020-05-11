@@ -1,14 +1,14 @@
-package ru.ermolnik.base.presentation
+package ru.ermolnik.base.presentation.view
 
 import android.content.Context
 import android.os.Bundle
 import androidx.annotation.LayoutRes
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import dagger.android.support.DaggerAppCompatActivity
+import ru.ermolnik.base.presentation.vm.BaseViewModel
 import javax.inject.Inject
 
-abstract class BaseActivity<VM : ViewModel> : DaggerAppCompatActivity(),
+abstract class BaseActivity<VM : BaseViewModel> : DaggerAppCompatActivity(),
     BaseView {
 
     @Inject

@@ -1,4 +1,4 @@
-package ru.ermolnik.base.presentation
+package ru.ermolnik.base.presentation.di
 
 import android.content.Context
 import android.graphics.Bitmap.CompressFormat

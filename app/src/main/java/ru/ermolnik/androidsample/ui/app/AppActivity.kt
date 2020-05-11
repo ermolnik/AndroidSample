@@ -6,8 +6,8 @@ import androidx.navigation.NavController
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import ru.ermolnik.androidsample.R
-import ru.ermolnik.androidsample.extensions.setupWithNavController
-import ru.ermolnik.base.presentation.BaseActivity
+import ru.ermolnik.base.presentation.view.BaseActivity
+import ru.ermolnik.base.util.ext.setupWithNavController
 
 class AppActivity : BaseActivity<AppViewModel>() {
 

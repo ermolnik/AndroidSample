@@ -1,10 +1,8 @@
 package ru.ermolnik.androidsample
 
-import dagger.android.AndroidInjector
-import dagger.android.support.DaggerApplication
 import ru.ermolnik.androidsample.di.component.AppComponent
 import ru.ermolnik.androidsample.di.component.DaggerAppComponent
-import ru.ermolnik.base.presentation.BaseApplication
+import ru.ermolnik.base.presentation.view.BaseApplication
 
 class App : BaseApplication() {
 

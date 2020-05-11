@@ -1,4 +1,4 @@
-package ru.ermolnik.base.presentation
+package ru.ermolnik.base.presentation.di
 
 import dagger.Binds
 import dagger.Module

@@ -1,4 +1,4 @@
-package ru.ermolnik.androidsample.extensions
+package ru.ermolnik.base.util.ext
 
 import android.content.Intent
 import android.util.SparseArray
@@ -10,7 +10,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import ru.ermolnik.androidsample.R
+import ru.ermolnik.base.R
 
 /**
  * Manages the various graphs needed for a [BottomNavigationView].

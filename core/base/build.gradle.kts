@@ -36,6 +36,10 @@ android {
         targetCompatibility = javaVersion
     }
 
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
 //    lintOptions.setDefaults(file("lint.xml"))
 }
 
@@ -65,4 +69,8 @@ dependencies {
     testImplementation(TestLibraries.junit)
     androidTestImplementation(TestLibraries.jUnitExt)
     androidTestImplementation(TestLibraries.espresso)
+
+    implementation("android.arch.navigation:navigation-fragment-ktx:1.0.0")
+    implementation("android.arch.navigation:navigation-ui-ktx:1.0.0")
+    implementation("androidx.fragment:fragment:1.2.4")
 }

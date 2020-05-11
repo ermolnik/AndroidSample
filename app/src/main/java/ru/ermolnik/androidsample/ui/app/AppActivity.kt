@@ -1,11 +1,12 @@
-package ru.ermolnik.androidsample
+package ru.ermolnik.androidsample.ui.app
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import androidx.navigation.NavController
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import ru.ermolnik.androidsample.vm.AppViewModel
+import ru.ermolnik.androidsample.R
+import ru.ermolnik.androidsample.extensions.setupWithNavController
 import ru.ermolnik.base.presentation.BaseActivity
 
 class AppActivity : BaseActivity<AppViewModel>() {
@@ -23,7 +24,10 @@ class AppActivity : BaseActivity<AppViewModel>() {
   private fun setupBottomNavigationBar() {
     val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_nav)
 
-    val navGraphIds = listOf(R.navigation.main, R.navigation.settings)
+    val navGraphIds = listOf(
+      R.navigation.main,
+      R.navigation.settings
+    )
 
 
     val controller = bottomNavigationView.setupWithNavController(

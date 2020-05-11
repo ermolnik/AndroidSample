@@ -5,7 +5,7 @@ import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap
 import ru.ermolnik.androidsample.vm.ViewModelKey
-import ru.ermolnik.androidsample.vm.AppViewModel
+import ru.ermolnik.androidsample.ui.app.AppViewModel
 
 @Module
 abstract class AppViewModelModule {

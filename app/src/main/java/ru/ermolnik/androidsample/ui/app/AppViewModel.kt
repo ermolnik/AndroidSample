@@ -1,4 +1,4 @@
-package ru.ermolnik.androidsample.vm
+package ru.ermolnik.androidsample.ui.app
 
 import androidx.lifecycle.ViewModel
 import javax.inject.Inject

@@ -17,7 +17,7 @@ abstract class BaseActivity<VM : ViewModel> : DaggerAppCompatActivity(),
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
 
-    lateinit var viewModel: VM
+    private lateinit var viewModel: VM
 
     @get:LayoutRes
     abstract val layoutId: Int

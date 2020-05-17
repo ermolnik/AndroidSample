@@ -1,4 +1,4 @@
-package ru.ermolnik.androidsample.vm
+package ru.ermolnik.base.presentation.vm
 
 import androidx.lifecycle.ViewModel
 import dagger.MapKey

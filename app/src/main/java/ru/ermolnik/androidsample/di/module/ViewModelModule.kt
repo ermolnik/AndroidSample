@@ -4,7 +4,7 @@ import androidx.lifecycle.ViewModelProvider
 import dagger.Binds
 import dagger.Module
 import ru.ermolnik.androidsample.ui.app.di.AppActivityViewModelModule
-import ru.ermolnik.androidsample.vm.ViewModelFactory
+import ru.ermolnik.base.presentation.vm.ViewModelFactory
 
 @Module(includes = [AppActivityViewModelModule::class])
 abstract class ViewModelModule {

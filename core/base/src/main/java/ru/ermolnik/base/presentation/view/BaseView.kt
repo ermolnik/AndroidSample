@@ -1,6 +1,6 @@
 package ru.ermolnik.base.presentation.view
 
-interface BaseView {
+abstract class BaseView : IBaseView {
 
-    fun observeViewModel()
+    override fun observeViewModel() {}
 }

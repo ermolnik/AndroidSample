@@ -1,15 +1,15 @@
-package ru.ermolnik.androidsample.ui.app
+package ru.ermolnik.androidsample.ui.app.view
 
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.Observer
 import androidx.navigation.NavController
-import androidx.navigation.ui.setupActionBarWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import ru.ermolnik.androidsample.R
 import ru.ermolnik.base.presentation.view.BaseActivity
 import ru.ermolnik.base.util.ext.setupWithNavController
 
-class AppActivity : BaseActivity<AppViewModel>() {
+
+class AppActivity : BaseActivity<AppActivityViewModel>(),
+  AppActivityContract.View {
 
   override val layoutId = R.layout.activity_main
 
@@ -37,9 +37,9 @@ class AppActivity : BaseActivity<AppViewModel>() {
       intent = intent
     )
 
-    controller.observe(this, Observer { navController ->
-      setupActionBarWithNavController(navController)
-    })
+//    controller.observe(this, Observer { navController ->
+//      setupActionBarWithNavController(navController)
+//    })
     currentNavController = controller
   }
 
@@ -47,7 +47,7 @@ class AppActivity : BaseActivity<AppViewModel>() {
     return currentNavController?.value?.navigateUp() ?: false
   }
 
-  override fun getViewModelClass(): Class<AppViewModel> = AppViewModel::class.java
+  override fun getViewModelClass(): Class<AppActivityViewModel> = AppActivityViewModel::class.java
 
   override fun observeViewModel() {
 

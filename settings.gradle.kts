@@ -1,6 +1,5 @@
 rootProject.name = "AndroidSample"
 include(":app")
-include(":buildSrc")
 include(":core:base")
 include(":common")
 include(":core:data")

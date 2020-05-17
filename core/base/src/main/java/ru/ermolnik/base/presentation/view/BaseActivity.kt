@@ -9,7 +9,7 @@ import ru.ermolnik.base.presentation.vm.BaseViewModel
 import javax.inject.Inject
 
 abstract class BaseActivity<VM : BaseViewModel> : DaggerAppCompatActivity(),
-    BaseView {
+    IBaseView {
 
     @Inject
     lateinit var context: Context

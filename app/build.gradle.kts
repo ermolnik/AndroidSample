@@ -54,6 +54,7 @@ dependencies {
   implementation("android.arch.navigation:navigation-ui-ktx:1.0.0")
   implementation("androidx.fragment:fragment:1.2.4")
   implementation(project(":core:base"))
+    implementation(project(":features:auth"))
   implementation(project(":features:main"))
   implementation(project(":features:settings"))
 }

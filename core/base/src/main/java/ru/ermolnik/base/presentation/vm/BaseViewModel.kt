@@ -10,4 +10,6 @@ abstract class BaseViewModel : ViewModel(),
     override fun onResume() {}
 
     override fun onPause() {}
+
+    override fun onViewCreated() {}
 }

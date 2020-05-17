@@ -9,7 +9,7 @@ import dagger.android.support.DaggerFragment
 import ru.ermolnik.base.presentation.vm.BaseViewModel
 
 abstract class BaseFragment<VM : BaseViewModel> : DaggerFragment(),
-    BaseView {
+    IBaseView {
 
     @get:LayoutRes
     abstract val layoutId: Int
